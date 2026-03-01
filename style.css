@@ -79,7 +79,7 @@ h1 {
 .stats-dashboard {
     position: absolute;
     right: 20px;
-    top: 65px;
+    top: 40px;
     width: 250px;
     background: #d5d5f9;
     padding: 10px;
@@ -93,8 +93,4 @@ button {
 
 .bar {
     border: 3px solid black;
-}
-
-h2 {
-    margin: 0;
 }
