@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="search-bar">
+        <label for="search"><h2>Search Events</h2></label>
+        <input type="search" id="search" class="bar">
+    </div>
+
+     <div class="stats-dashboard">
+        <h3>Stats Dashboard</h3>
+        <ul id="stats">
+            <li>
+                Total events: <span id="total-events"></span>
+            </li>
+            <li>
+                Most Popular Event: <span id="popular-event"></span>
+            </li>
+        </ul>
+    </div>
+
+
+    <h1>All Events</h1>
+    
+    <div class="sort">
+        <label for="sorter">Sort By:</label>
+        <select name="sorter" id="sorter">
+          <option value="default">None</option>
+          <option value="day">Day</option>
+          <option value="registrations">Registrations</option>
+        </select>
+    </div>
+   
+    <div class="filter-buttons">
+        <button data-name="Tech">Tech</button>
+        <button data-name="Music">Music</button>
+        <button data-name="Cultural">Cultural</button>
+        <button data-name="Challenges">Challenges</button>
+        <button data-name="Games">Games</button>
+        <button data-name="Comedy">Comedy</button>
+        <button data-name="Arts">Arts</button>
+        <button data-name="Fun">Fun</button>
+    </div>
+    <div class="reset-button">
+        <button id="reset-button">Reset</button>
+    </div>
+    
+    <div id="events-stored"></div>
+    <p id="body-message"></p>
+
+    <hr>
+
+    <div id="favourite-events">
+        <h1>My Favourites</h1>
+        <p id="no-favourite-message" class="no-fav">No favourites yet</p>
+        <div id="favourite-cards">
+        </div>
+    </div>
+    
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
